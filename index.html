@@ -22,6 +22,9 @@
   -->
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
   <!-- 
     - google font link
   -->
@@ -34,7 +37,7 @@
   <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href="/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="/images/hero-banner1.jpg">
 
 </head>
 
@@ -94,7 +97,7 @@
       <div class="container">
 
         <a href="#" class="logo">
-          <img src="/images/CoffeeEyesPrimarylogobrw@3x.png" width="216" height="80" alt="coffeeyes home" class="w-100">
+          <img src="./images/CoffeeEyesPrimarylogobrw@3x.png" width="216" height="80" alt="coffeeyes home" class="w-100">
         </a>
 
         <nav class="navbar" data-navbar>
@@ -114,6 +117,14 @@
             </li>
 
             <li>
+                <a href="#product" class="navbar-link" data-nav-link>Product</a>
+              </li>
+
+            <li>
+                <a href="#review" class="navbar-link" data-nav-link>Review</a>
+            </li>
+
+            <li>
               <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
             </li>
 
@@ -123,7 +134,7 @@
 
           </ul>
 
-          <a href="#" class="btn btn-primary">Book A Table</a>
+          <a href="#" class="btn btn-primary">Buy Your Coffee</a>
 
         </nav>
 
@@ -131,7 +142,10 @@
           <span class="span"></span>
           <span class="span"></span>
         </button>
-
+        <div class="icons">
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+        </div>
       </div>
     </div>
 
@@ -701,7 +715,45 @@
     </article>
   </main>
 
+<!--#product -->>
 
+<section class="products" id="products">
+
+    <h1 class="heading"> our <span>products</span></h1>
+    
+    <div class="box-container">
+
+        <div class="box-container">
+
+            <div class="box">
+
+                <div class="icon">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h3>fresh coffee</h3>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$15.99 <span>$20.99</span></div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
 
 
