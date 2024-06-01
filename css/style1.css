@@ -43,6 +43,24 @@ body{
     background: var(--bg);
 }
 
+section{
+    padding: 2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: var(--main-color);
+
+
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -114,6 +132,10 @@ body{
 
 }
 
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
 .header .search-form input{
     height: 100%;
     width: 100%;
@@ -144,6 +166,9 @@ body{
     padding:0 1.5rem;
 }
 
+.header .cart-items-container.active{
+    right: 0;
+}
 
 .header .cart-items-container .cart-item{
     position: relative;
@@ -186,11 +211,71 @@ body{
 }
 
 
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(../images/hero-banner1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
 
 
+.home .content{
+    max-width: 60rem;
+
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
+
+}
 
 
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
 
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
 
 
 
@@ -224,19 +309,28 @@ body{
         padding:1.5rem 2rem;
     }
 
+    section{
+        padding: 2rem;
+    }
+
 }
 
-@media (max-width:991px){
+@media (max-width:768px){
+
     #menu-btn{
         display: inline-block;
     }
 
     .header .navbar{
         position: absolute;
-        top: 100%; right:-100;
+        top: 100%; right:-100%;
         background: #fff;
         width: 30rem;
         height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right: 0;
     }
 
     .header .navbar a{
@@ -247,5 +341,34 @@ body{
         font-size: 2rem;
     }
 
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
 
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+        
+    }
+   
 }
